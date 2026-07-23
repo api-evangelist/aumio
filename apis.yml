@@ -1,8 +1,25 @@
 aid: aumio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aumio.png
 name: Aumio
-description: 'Aumio is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Healthcare. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Aumio (Aumio GmbH) is a Berlin-based children''s digital-health company behind a
+  freemium sleep, meditation, and mindfulness mobile app for kids aged roughly 0-10 and their families.
+  The app offers 200+ audio experiences - bedtime stories, soundscapes, white noise, sleep music, and
+  guided meditations - added to weekly, with parts of the subscription reimbursed by German statutory
+  health-insurance providers as a certified prevention course. Founded in 2020 and backed by Partech,
+  Aumio operates as a consumer B2C product (iOS, Android, and web) and publishes no public developer
+  API, SDK, or documentation surface; this API Evangelist profile captures its public web and domain
+  footprint.'
 url: https://raw.githubusercontent.com/api-evangelist/aumio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,19 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Digital Health
+- Mental Health
+- Sleep
+- Meditation
+- Mindfulness
+- Children
+- Wellness
+- Mobile App
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aumio-domain-security.yml
 - type: Website
-  url: https://aumio.de/
+  url: https://www.aumio.com/
+- type: Blog
+  url: https://aumio.de/artikel
+- type: Support
+  url: https://aumio.freshdesk.com/de/support/home
+- type: PrivacyPolicy
+  url: https://aumio.de/rechtliches/datenschutz
+- type: TermsOfService
+  url: https://aumio.de/rechtliches/agb
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
